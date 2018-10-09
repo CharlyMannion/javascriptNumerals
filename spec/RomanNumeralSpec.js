@@ -12,7 +12,7 @@ describe("RomanNumeral", function() {
             expect(romanNumeral.convertInteger(5)).toEqual("V");
         });
         it("should return the Roman Numeral for 10", function() {
-
+            expect(romanNumeral.convertInteger(10)).toEqual("X");
         })
     });
 })
