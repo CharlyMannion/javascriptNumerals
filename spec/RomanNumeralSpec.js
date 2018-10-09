@@ -1,8 +1,9 @@
 describe("RomanNumeral", function() {
-    
 
-    it("should return the Roman Numeral for 1", function() {
-        romanNumeral = new RomanNumeral();
-        expect(romanNumeral.convertInteger(1)).toEqual("I");
+    describe("convert an integer to a roman numeral", function() {
+        it("should return the Roman Numeral for 1", function() {
+            romanNumeral = new RomanNumeral();
+            expect(romanNumeral.convertInteger(1)).toEqual("I");
+        });
     });
 })
