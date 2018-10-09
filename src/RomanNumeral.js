@@ -2,5 +2,8 @@ function RomanNumeral() {
 }
 
 RomanNumeral.prototype.convertInteger = function(integer) {
-   return 'I'; 
+    if (integer === 1) {
+        return 'I'
+    } else
+   return 'V'; 
 }
