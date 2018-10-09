@@ -13,6 +13,15 @@ describe("RomanNumeral", function() {
         });
         it("should return the Roman Numeral for 10", function() {
             expect(romanNumeral.convertInteger(10)).toEqual("X");
-        })
+        });
+        it("should return the Roman Numeral for 50", function() {
+            expect(romanNumeral.convertInteger(50)).toEqual("L");
+        });
+        it("should return the Roman Numeral for 100", function() {
+            expect(romanNumeral.convertInteger(100)).toEqual("C");
+        });
+        it("should return the Roman Numeral for 1000", function() {
+            expect(romanNumeral.convertInteger(1000)).toEqual("M");
+        });
     });
 })
