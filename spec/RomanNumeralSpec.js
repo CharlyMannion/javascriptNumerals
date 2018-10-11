@@ -8,6 +8,9 @@ describe("RomanNumeral", function() {
         it("should have an object containing the basic roman numerals", function() {
             expect(romanNumeral.basicNumerals).toEqual({1: "I", 5: "V", 10: "X", 50: "L", 100: "C", 1000: "M"});
         })
+        it("should have an array listing the basic integers", function() {
+            expect(romanNumeral.trueValues).toEqual([1, 5, 10, 50, 100, 1000]);
+        })
     })
 
     describe("converting the most basic integers to roman numerals", function() {
