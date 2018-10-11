@@ -3,5 +3,5 @@ function RomanNumeral() {
 }
 
 RomanNumeral.prototype.convertInteger = function(integer) {
-    return integer;
+    return this.basicNumerals[integer];
 }
