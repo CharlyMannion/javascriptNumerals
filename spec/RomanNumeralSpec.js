@@ -6,7 +6,7 @@ describe("RomanNumeral", function() {
 
     describe("when you create a new roman numeral instance", function() {
         it("should have an object containing the basic roman numerals", function() {
-            expect(romanNumeral.basicNumerals).toEqual("insert numerals object");
+            expect(romanNumeral.basicNumerals).toEqual({"key": "value"});
         });
     })
 
