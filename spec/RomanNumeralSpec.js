@@ -10,6 +10,12 @@ describe("RomanNumeral", function() {
         });
     })
 
+    describe("converting the most basic integers to roman numerals", function() {
+        it("should return I when passed the integer 1", function() {
+            expect(romanNumeral.basicNumerals[1]).toEqual("I");
+        })
+    })
+
     // describe("A function to convert an integer to a roman numeral", function() {
     //     it("should return the Roman Numeral for 1", function() {
     //         expect(romanNumeral.convertInteger(1)).toEqual("I");
