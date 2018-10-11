@@ -6,7 +6,7 @@ describe("RomanNumeral", function() {
 
     describe("when you create a new roman numeral instance", function() {
         it("should have an object containing the basic roman numerals", function() {
-            expect(romanNumeral.basicNumerals).toEqual({1: "I", 5: "V"});
+            expect(romanNumeral.basicNumerals).toEqual({1: "I", 5: "V", 10: "X", 50: "L", 100: "C", 1000: "M"});
         })
     })
 
@@ -16,6 +16,18 @@ describe("RomanNumeral", function() {
         })
         it("5 should have the value V", function() {
             expect(romanNumeral.basicNumerals[5]).toEqual("V");
+        })
+        it("10 should have the value X", function() {
+            expect(romanNumeral.basicNumerals[10]).toEqual("X");
+        })
+        it("50 should have the value L", function() {
+            expect(romanNumeral.basicNumerals[50]).toEqual("L");
+        })
+        it("100 should have the value C", function() {
+            expect(romanNumeral.basicNumerals[100]).toEqual("C");
+        })
+        it("1000 should have the value M", function() {
+            expect(romanNumeral.basicNumerals[1000]).toEqual("M");
         })
     })
 
