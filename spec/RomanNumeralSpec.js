@@ -6,13 +6,16 @@ describe("RomanNumeral", function() {
 
     describe("when you create a new roman numeral instance", function() {
         it("should have an object containing the basic roman numerals", function() {
-            expect(romanNumeral.basicNumerals).toEqual({1: "I"});
-        });
+            expect(romanNumeral.basicNumerals).toEqual({1: "I", 5: "V"});
+        })
     })
 
     describe("converting the most basic integers to roman numerals", function() {
-        it("should return I when passed the integer 1", function() {
+        it("1 should have the value I", function() {
             expect(romanNumeral.basicNumerals[1]).toEqual("I");
+        })
+        it("5 should have the value V", function() {
+            expect(romanNumeral.basicNumerals[5]).toEqual("V");
         })
     })
 

@@ -1,5 +1,5 @@
 function RomanNumeral() {
-    this.basicNumerals = {1: "I"}
+    this.basicNumerals = {1: "I", 5: "V"}
 }
 
 // RomanNumeral.prototype.convertInteger = function(integer) {
