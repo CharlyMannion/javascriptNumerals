@@ -23,12 +23,10 @@ This is a program that takes a number between 1 and 1000 and returns the corresp
 To run the programme in the console:
 
 ```
-romanNumeral = new RomanNumeral();
+roman = new Roman();
 ```
 
 ### Example Output
 
 ```
-romanNumeral.convertInteger(1);
-I
 ```
