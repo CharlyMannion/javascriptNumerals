@@ -6,10 +6,10 @@ describe("RomanNumeral", function() {
 
     describe("when you create a new roman numeral instance", function() {
         it("should have an object containing the basic roman numerals", function() {
-            expect(romanNumeral.basicNumerals).toEqual({1: "I", 5: "V", 10: "X", 50: "L", 100: "C", 1000: "M"});
+            expect(romanNumeral.basicNumerals).toEqual({1: "I", 5: "V", 10: "X", 50: "L", 100: "C", 500: "D", 1000: "M"});
         })
         it("should have an array listing the basic integers", function() {
-            expect(romanNumeral.trueValues).toEqual([1, 5, 10, 50, 100, 1000]);
+            expect(romanNumeral.trueValues).toEqual([1, 5, 10, 50, 100, 500, 1000]);
         })
     })
 
@@ -28,6 +28,9 @@ describe("RomanNumeral", function() {
         })
         it("100 should have the value C", function() {
             expect(romanNumeral.basicNumerals[100]).toEqual("C");
+        })
+        it("500 should have the value D", function() {
+            expect(romanNumeral.basicNumerals[500]).toEqual("D");
         })
         it("1000 should have the value M", function() {
             expect(romanNumeral.basicNumerals[1000]).toEqual("M");
@@ -49,6 +52,9 @@ describe("RomanNumeral", function() {
         })
         it("should return the Roman Numeral for 100", function() {
             expect(romanNumeral.convertInteger(100)).toEqual("C");
+        })
+        it("should return the Roman Numeral for 500", function() {
+            expect(romanNumeral.convertInteger(500)).toEqual("D");
         })
         it("should return the Roman Numeral for 1000", function() {
             expect(romanNumeral.convertInteger(1000)).toEqual("M");
