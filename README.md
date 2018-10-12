@@ -14,6 +14,7 @@ This is a program that takes a number between 1 and 1000 and returns the corresp
 10 = X
 50 = L
 100 = C
+500 = D
 1000 = M
 ```
 
@@ -22,11 +23,12 @@ This is a program that takes a number between 1 and 1000 and returns the corresp
 To run the programme in the console:
 
 ```
-
+romanNumeral = new RomanNumeral();
 ```
 
 ### Example Output
 
 ```
-
+romanNumeral.convertInteger(1);
+I
 ```
