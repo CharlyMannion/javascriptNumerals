@@ -15,4 +15,10 @@ describe("Roman", function() {
             expect(roman.convertedInteger).toEqual("")
         })
     })
+
+    describe("converting basic integers to roman numerals", function() {
+        it("should convert 1 to I", function() {
+            expect(roman.romanize(1)).toEqual("I")
+        })
+    })
 })
