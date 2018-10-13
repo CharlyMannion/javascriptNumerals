@@ -11,5 +11,8 @@ describe("Roman", function() {
         it("should have an array of the corresponding integers", function() {
             expect(roman.basicIntegers).toEqual([1000, 500, 100, 50, 10, 1]);
         })
+        it("should have a placeholder for the converted integer as a numeral", function() {
+            expect(roman.convertedInteger).toEqual("")
+        })
     })
 })
