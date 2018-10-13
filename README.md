@@ -29,4 +29,6 @@ roman = new Roman();
 ### Example Output
 
 ```
+roman.romanize(2);
+"II"
 ```
