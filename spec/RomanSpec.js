@@ -21,4 +21,10 @@ describe("Roman", function() {
             expect(roman.romanize(1)).toEqual("I")
         })
     })
+
+    describe("converting non basic integers to roman numerals", function() {
+        it("should convert 1 to II", function() {
+            expect(roman.romanize(2)).toEqual("II")
+        })
+    })
 })

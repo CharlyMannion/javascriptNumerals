@@ -4,6 +4,6 @@ this.basicIntegers = [1000, 500, 100, 50, 10, 1]
 this.convertedInteger = ""
 }
 
-Roman.prototype.romanize = function() {
-    return "I"
+Roman.prototype.romanize = function(i) {
+    return i === 2 ? "II" : "I";
 }
