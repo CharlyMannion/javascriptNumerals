@@ -23,7 +23,7 @@ describe("Roman", function() {
     })
 
     describe("converting non basic integers to roman numerals", function() {
-        it("should convert 1 to II", function() {
+        it("should convert 2 to II", function() {
             expect(roman.romanize(2)).toEqual("II")
         })
     })
