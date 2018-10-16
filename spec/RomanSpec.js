@@ -26,5 +26,8 @@ describe("Roman", function() {
         it("should convert 2 to II", function() {
             expect(roman.romanize(2)).toEqual("II")
         })
+        it("has an index key of 0", function() {
+            expect(roman.indexKey).toEqual(0)
+        })
     })
 })
