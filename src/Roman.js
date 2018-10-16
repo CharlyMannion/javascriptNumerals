@@ -5,6 +5,6 @@ this.convertedInteger = ""
 }
 
 Roman.prototype.romanize = function(i) {
-    return i === 1 ? "I" : "II";
+    return (this.basicIntegers.includes(i)) ? "I" : "II";
     // LOOP THROUGH THE BASICINTEGERS ARRAY AND SEE IF I MATCHES THE VALUE. IF IT DOES, SAVE THE INDEX VALUE IN A VARIABLE. THEN USE THE VARIABLE TO LOOK UP THE VALUE AT THIS INDEX IN THE ROMANNUMERALS ARRAY. RETURN IT.
 }
