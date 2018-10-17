@@ -17,8 +17,8 @@ describe("Roman", function() {
     })
 
     describe("converting basic integers to roman numerals", function() {
-        it("should convert 1 to I", function() {
-            expect(roman.romanize(1)).toEqual("I")
+        it("should convert 1000 to M", function() {
+            expect(roman.romanize(1000)).toEqual("M")
         })
     })
 
