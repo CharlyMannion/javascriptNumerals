@@ -20,6 +20,9 @@ describe("Roman", function() {
         it("should convert 1000 to M", function() {
             expect(roman.romanize(1000)).toEqual("M")
         })
+        it("should convert 500 to D", function() {
+            expect(roman.romanize(500)).toEqual("D")
+        })
     })
 
     describe("converting non basic integers to roman numerals", function() {
