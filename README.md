@@ -23,12 +23,12 @@ This is a program that takes a number between 1 and 1000 and returns the corresp
 To run the programme in the console:
 
 ```
-roman = new Roman();
+numeralator = new Numeralator();
 ```
 
 ### Example Output
 
 ```
-roman.romanize(2);
+numeralator.convertInteger(2);
 "II"
 ```
