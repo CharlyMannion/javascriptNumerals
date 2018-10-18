@@ -2,7 +2,6 @@ function Roman(num) {
 this.romanNumerals = ["M", "D", "C", "L", "X", "V", "I"]
 this.basicIntegers = [1000, 500, 100, 50, 10, 5, 1]
 this.convertedInteger = ""
-// this.indexKey = 0
 }
 
 Roman.prototype.romanize = function(i) {
