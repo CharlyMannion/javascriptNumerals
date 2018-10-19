@@ -20,6 +20,26 @@ function Numeralator() {
             matchRoman: function(integer) { if (integer === 5) return true},
             getValue: function(integer) {return "V"}
         },
+        {
+            matchRoman: function(integer) { if (integer === 6) return true},
+            getValue: function(integer) {return "VI"}
+        },
+        {
+            matchRoman: function(integer) { if (integer === 7) return true},
+            getValue: function(integer) {return "VII"}
+        },
+        {
+            matchRoman: function(integer) { if (integer === 8) return true},
+            getValue: function(integer) {return "VIII"}
+        },
+        {
+            matchRoman: function(integer) { if (integer === 9) return true},
+            getValue: function(integer) {return "IX"}
+        },
+        {
+            matchRoman: function(integer) { if (integer === 10) return true},
+            getValue: function(integer) {return "X"}
+        },
     ]
 }
 
