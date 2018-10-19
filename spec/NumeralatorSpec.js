@@ -14,6 +14,12 @@ describe("Numeralator", function() {
         it("should convert 3 to III", function() {
             expect(numeralator.convertInteger(3)).toEqual("III");
         })
+        it("should convert 4 to IV", function() {
+            expect(numeralator.convertInteger(4)).toEqual("IV");
+        })
+        it("should convert 5 to V", function() {
+            expect(numeralator.convertInteger(5)).toEqual("V");
+        })
     })
 
 })

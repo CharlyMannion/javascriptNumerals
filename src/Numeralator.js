@@ -12,6 +12,14 @@ function Numeralator() {
             matchRoman: function(integer) { if (integer === 3) return true},
             getValue: function(integer) {return "III"}
         },
+        {
+            matchRoman: function(integer) { if (integer === 4) return true},
+            getValue: function(integer) {return "IV"}
+        },
+        {
+            matchRoman: function(integer) { if (integer === 5) return true},
+            getValue: function(integer) {return "V"}
+        },
     ]
 }
 
