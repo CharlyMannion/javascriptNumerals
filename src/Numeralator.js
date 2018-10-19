@@ -3,6 +3,5 @@ function Numeralator() {
 }
 
 Numeralator.prototype.convertInteger = function(num) {
-    // console.log(this.numeralTypes[0].roman);
     return (this.numeralTypes[0].int === num) ? this.numeralTypes[0].roman : this.numeralTypes[1].roman;
 }
