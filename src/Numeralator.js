@@ -1,7 +1,13 @@
 function Numeralator() {
-    this.numeralTypes = [ { roman: "I", int: 1 }, { roman: "II", int: 2 }, { roman: "III", int: 3 }, { roman: "IV", int: 4 }, { roman: "V", int: 5 }]
+    this.rules = [ 
+        {
+            matchRoman: function(integer) { if (integer === 1) return true },
+            getValue: function(integer) { return "I" }
+        }
+    ]
 }
 
-Numeralator.prototype.convertInteger = function(num) {
-    return (this.numeralTypes[0].int === num) ? this.numeralTypes[0].roman : this.numeralTypes[1].roman;
+Numeralator.prototype.convertInteger = function(integer) {
+    var matchingRule = this.rules.find((rule) => rule.matchRoman(integer));
+    return matchingRule.getValue(integer);
 }
