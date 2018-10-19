@@ -40,4 +40,10 @@ describe("Numeralator", function() {
         })
     })
 
+    describe("A function to convert integers 11-15 to roman numerals", function() {
+        it("should convert 11 to XI", function() {
+            expect(numeralator.convertInteger(11)).toEqual("XI");
+        })
+    })
+
 })
