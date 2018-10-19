@@ -41,8 +41,8 @@ function Numeralator() {
             getValue: function(integer) {return "X"}
         },
         {
-            matchRoman: function(integer) { if (integer / 10 > 1) return true},
-            getValue: function(integer) {return "XI"}
+            matchRoman: function(integer) { if (integer % 10 === 1) return true},
+            getValue: function(integer) { return (integer / 10 > 1 && integer / 10 < 2) ?  "XI" : "XXII" }
         },
     ]
 }

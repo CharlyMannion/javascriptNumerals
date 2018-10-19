@@ -40,9 +40,12 @@ describe("Numeralator", function() {
         })
     })
 
-    describe("A function to convert integers 11-15 to roman numerals", function() {
+    describe("A function to convert integers that divide by 10 with remainder 1", function() {
         it("should convert 11 to XI", function() {
             expect(numeralator.convertInteger(11)).toEqual("XI");
+        })
+        it("should convert 21 to XXII", function() {
+            expect(numeralator.convertInteger(21)).toEqual("XXII");
         })
     })
 
