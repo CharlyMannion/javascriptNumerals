@@ -3,7 +3,15 @@ function Numeralator() {
         {
             matchRoman: function(integer) { if (integer === 1) return true },
             getValue: function(integer) { return "I" }
-        }
+        },
+        {
+            matchRoman: function(integer) { if (integer === 2) return true},
+            getValue: function(integer) {return "II"}
+        },
+        {
+            matchRoman: function(integer) { if (integer === 3) return true},
+            getValue: function(integer) {return "III"}
+        },
     ]
 }
 
