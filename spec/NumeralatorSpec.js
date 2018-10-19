@@ -47,6 +47,9 @@ describe("Numeralator", function() {
         it("should convert 21 to XXII", function() {
             expect(numeralator.convertInteger(21)).toEqual("XXII");
         })
+        it("should convert 31 to XXXII", function() {
+            expect(numeralator.convertInteger(31)).toEqual("XXXII");
+        })
     })
 
 })
