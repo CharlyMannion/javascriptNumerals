@@ -1,5 +1,12 @@
 function Numeralator() {
+
+    // this.basicIntegers = [ { int: 1, rom: "I"}, { int: 2, rom: "II" }, { int: 3, rom: "III" } ]
+
     this.rules = [ 
+        // {
+        //     matchRoman: function(integer) { if (integer === this.basicIntegers.int) return true },
+        //     getValue: function(integer) { return this.basicIntegers.rom }
+        // },
         {
             matchRoman: function(integer) { if (integer === 1) return true },
             getValue: function(integer) { return "I" }
