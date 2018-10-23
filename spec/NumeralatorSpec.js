@@ -45,11 +45,11 @@ describe("Numeralator", function() {
             expect(numeralator.convertInteger(11)).toEqual("XI");
         })
         it("should convert 21 to XXII", function() {
-            expect(numeralator.convertInteger(21)).toEqual("XXII");
+            expect(numeralator.convertInteger(21)).toEqual("XXI");
         })
-    //     it("should convert 31 to XXXII", function() {
-    //         expect(numeralator.convertInteger(31)).toEqual("XXXII");
-    //     })
+        it("should convert 31 to XXXII", function() {
+            expect(numeralator.convertInteger(31)).toEqual("XXXI");
+        })
     })
 
 })

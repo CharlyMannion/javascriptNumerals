@@ -49,7 +49,17 @@ function Numeralator() {
         },
         {
             matchRoman: function(integer) { if (integer % 10 === 1) return true},
-            getValue: function(integer) { return (integer / 10 > 1 && integer / 10 < 2) ?  "XI" : "XXII" }
+            getValue: function(integer) { switch (integer) {
+                case 11:
+                    return("XI");
+                    break;
+                case 21:
+                    return("XXI");
+                    break;
+                case 31:
+                    return("XXXI");
+                    break;
+            } }
         },
     ]
 }
@@ -58,3 +68,6 @@ Numeralator.prototype.convertInteger = function(integer) {
     var matchingRule = this.rules.find((rule) => rule.matchRoman(integer));
     return matchingRule.getValue(integer);
 }
+
+// { return (integer / 10 > 1 && integer / 10 < 2) ?  "XI" : "XXII" }
+
