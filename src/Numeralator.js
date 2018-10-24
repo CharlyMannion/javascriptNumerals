@@ -59,6 +59,9 @@ function Numeralator() {
                 case 31:
                     return("XXXI");
                     break;
+                case 41:
+                    return("XXXXI");
+                    break;     
             } }
         },
     ]
@@ -68,6 +71,3 @@ Numeralator.prototype.convertInteger = function(integer) {
     var matchingRule = this.rules.find((rule) => rule.matchRoman(integer));
     return matchingRule.getValue(integer);
 }
-
-// { return (integer / 10 > 1 && integer / 10 < 2) ?  "XI" : "XXII" }
-
