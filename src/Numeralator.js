@@ -2,21 +2,11 @@ function Numeralator() {
 
     var basicNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-    // var basicIntegers = [ { int: 1, rom: "I"}, { int: 2, rom: "II" }, { int: 3, rom: "III" } ]
-
     this.rules = [ 
         {
             matchRoman: function(integer) { if (integer === 15) return true},
             getValue: function(integer) {return "XV"}
         },
-        // {
-        //     matchRoman: function(integer) { 
-        //         if (integer === basicIntegers.int) return true 
-        //     },
-        //     getValue: function(integer) { 
-        //         return basicIntegers.rom 
-        //     }
-        // },
         {
             matchRoman: function(integer) { if (basicNum.includes(integer)) return true },
             getValue: function(integer) { switch (integer) {
