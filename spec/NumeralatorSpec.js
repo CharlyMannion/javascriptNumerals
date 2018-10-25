@@ -50,8 +50,14 @@ describe("Numeralator", function() {
         it("should convert 31 to XXXI", function() {
             expect(numeralator.convertInteger(31)).toEqual("XXXI");
         })
-        it("should convert 31 to XXXXI", function() {
+        it("should convert 41 to XXXXI", function() {
             expect(numeralator.convertInteger(41)).toEqual("XXXXI");
+        })
+    })
+
+    describe("A function to convert multiples of 5", function() {
+        it("should convert 15 to XV", function() {
+            expect(numeralator.convertInteger(15)).toEqual("XV");
         })
     })
 

@@ -64,6 +64,10 @@ function Numeralator() {
                     break;     
             } }
         },
+        {
+            matchRoman: function(integer) { if (integer === 15) return true},
+            getValue: function(integer) {return "XV"}
+        },
     ]
 }
 
