@@ -1,5 +1,7 @@
 function Numeralator() {
 
+    var basicNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
     // this.basicIntegers = [ { int: 1, rom: "I"}, { int: 2, rom: "II" }, { int: 3, rom: "III" } ]
 
     this.rules = [ 
@@ -8,44 +10,39 @@ function Numeralator() {
         //     getValue: function(integer) { return this.basicIntegers.rom }
         // },
         {
-            matchRoman: function(integer) { if (integer === 1) return true },
-            getValue: function(integer) { return "I" }
-        },
-        {
-            matchRoman: function(integer) { if (integer === 2) return true},
-            getValue: function(integer) {return "II"}
-        },
-        {
-            matchRoman: function(integer) { if (integer === 3) return true},
-            getValue: function(integer) {return "III"}
-        },
-        {
-            matchRoman: function(integer) { if (integer === 4) return true},
-            getValue: function(integer) {return "IV"}
-        },
-        {
-            matchRoman: function(integer) { if (integer === 5) return true},
-            getValue: function(integer) {return "V"}
-        },
-        {
-            matchRoman: function(integer) { if (integer === 6) return true},
-            getValue: function(integer) {return "VI"}
-        },
-        {
-            matchRoman: function(integer) { if (integer === 7) return true},
-            getValue: function(integer) {return "VII"}
-        },
-        {
-            matchRoman: function(integer) { if (integer === 8) return true},
-            getValue: function(integer) {return "VIII"}
-        },
-        {
-            matchRoman: function(integer) { if (integer === 9) return true},
-            getValue: function(integer) {return "IX"}
-        },
-        {
-            matchRoman: function(integer) { if (integer === 10) return true},
-            getValue: function(integer) {return "X"}
+            matchRoman: function(integer) { if (basicNum.includes(integer)) return true },
+            getValue: function(integer) { switch (integer) {
+                case 1:
+                    return("I");
+                    break;
+                case 2:
+                    return("II");
+                    break;    
+                case 3:
+                    return("III");
+                    break; 
+                case 4:
+                    return("IV");
+                    break; 
+                case 5:
+                    return("V");
+                    break;
+                case 6:
+                    return("VI");
+                    break;    
+                case 7:
+                    return("VII");
+                    break; 
+                case 8:
+                    return("VIII");
+                    break;   
+                case 9:
+                    return("IX");
+                    break;                 
+                case 10:
+                    return("X");
+                    break;       
+            } }
         },
         {
             matchRoman: function(integer) { if (integer % 10 === 1) return true},
