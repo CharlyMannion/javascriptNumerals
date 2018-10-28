@@ -4,8 +4,8 @@ function Numeralator() {
 
     this.rules = [ 
         {
-            matchRoman: function(integer) { if (integer === 15) return true},
-            getValue: function(integer) {return "XV"}
+            matchRoman: function(integer) { if (integer % 10 === 5) return true},
+            getValue: function(integer) { return (integer === 15) ? "XV" :  "V" }
         },
         {
             matchRoman: function(integer) { if (basicNum.includes(integer)) return true }, 
