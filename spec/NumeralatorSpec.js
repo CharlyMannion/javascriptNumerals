@@ -44,6 +44,12 @@ describe("Numeralator", function() {
         it("should convert 11 to XI", function() {
             expect(numeralator.convertInteger(11)).toEqual("XI");
         })
+        it("should convert 13 to XIII", function() {
+            expect(numeralator.convertInteger(13)).toEqual("XIII");
+        })
+        it("should convert 20 to XX"), function() {
+            expect(numeralator.convertInteger(20)).toEqual("XX");
+        }
     })
 
     // describe("A function to convert integers that divide by 10 with remainder 1", function() {
