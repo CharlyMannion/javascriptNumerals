@@ -22,7 +22,7 @@ function Numeralator() {
                     9: "IX",
                     10: "X"
                 })[integer];
-                getNumeral(integer) 
+                return getNumeral(integer) 
             }
         },
         {
