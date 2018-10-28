@@ -8,39 +8,22 @@ function Numeralator() {
             getValue: function(integer) {return "XV"}
         },
         {
-            matchRoman: function(integer) { if (basicNum.includes(integer)) return true },
-            getValue: function(integer) { switch (integer) {
-                case 1:
-                    return("I");
-                    break;
-                case 2:
-                    return("II");
-                    break;    
-                case 3:
-                    return("III");
-                    break; 
-                case 4:
-                    return("IV");
-                    break; 
-                case 5:
-                    return("V");
-                    break;
-                case 6:
-                    return("VI");
-                    break;    
-                case 7:
-                    return("VII");
-                    break; 
-                case 8:
-                    return("VIII");
-                    break;   
-                case 9:
-                    return("IX");
-                    break;                 
-                case 10:
-                    return("X");
-                    break;       
-            } }
+            matchRoman: function(integer) { if (basicNum.includes(integer)) return true }, 
+            getValue: function(integer) { 
+                const getNumeral = (integer) => ({
+                    1: "I",
+                    2: "II",
+                    3: "III",
+                    4: "IV",
+                    5: "V",
+                    6: "VI",
+                    7: "VII",
+                    8: "VIII",
+                    9: "IX",
+                    10: "X"
+                })[integer];
+                getNumeral(integer) 
+            }
         },
         {
             matchRoman: function(integer) { if (integer % 10 === 1) return true},
