@@ -17,6 +17,14 @@ function Numeralator() {
 
     this.rules = [ 
         {
+            matchRoman: function(integer) { if ( integer > 40 && integer <= 50 ) return true }, 
+            getValue: function(integer) { return "XXXX" + getNumeral(integer-40) }
+        },
+        {
+            matchRoman: function(integer) { if ( integer > 30 && integer <= 40 ) return true }, 
+            getValue: function(integer) { return "XXX" + getNumeral(integer-30) }
+        },
+        {
             matchRoman: function(integer) { if ( integer > 20 && integer <= 30 ) return true }, 
             getValue: function(integer) { return "XX" + getNumeral(integer-20) }
         },
