@@ -34,9 +34,7 @@ function Numeralator() {
         },
         {
             matchRoman: function(integer) { if (basicNum.includes(integer)) return true }, 
-            getValue: function(integer) { 
-                return getNumeral(integer) 
-            }
+            getValue: function(integer) { return getNumeral(integer) }
         },
     ]
 }
