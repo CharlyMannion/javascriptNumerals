@@ -22,7 +22,7 @@ function Numeralator() {
         // },
         {
             matchRoman: function(integer) { if ( integer > 10 && integer <= 20 ) return true }, 
-            getValue: function(integer) { return "X" + "I" }
+            getValue: function(integer) { return "X" + getNumeral(1) }
         },
 
         {
