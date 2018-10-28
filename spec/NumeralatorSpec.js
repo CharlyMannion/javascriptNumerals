@@ -52,4 +52,10 @@ describe("Numeralator", function() {
         }
     })
 
+    describe("A function to convert integers 21-30 to numerals", function() {
+        it("should convert 24 to XXIV", function() {
+            expect(numeralator.convertInteger(24)).toEqual("XXIV");
+        })
+    })
+
 })
