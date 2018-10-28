@@ -27,20 +27,15 @@ function Numeralator() {
         },
         {
             matchRoman: function(integer) { if (integer % 10 === 1) return true},
-            getValue: function(integer) { switch (integer) {
-                case 11:
-                    return("XI");
-                    break;
-                case 21:
-                    return("XXI");
-                    break;
-                case 31:
-                    return("XXXI");
-                    break;
-                case 41:
-                    return("XXXXI");
-                    break;     
-            } }
+            getValue: function(integer) {
+                const getNumeral = (integer) => ({
+                    11: "XI",
+                    21: "XXI",
+                    31: "XXXI",
+                    41: "XXXXI"
+                })[integer];
+                return getNumeral(integer)   
+            } 
         },
     ]
 }
