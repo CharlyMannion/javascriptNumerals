@@ -52,25 +52,4 @@ describe("Numeralator", function() {
         }
     })
 
-    // describe("A function to convert integers that divide by 10 with remainder 1", function() {
-    //     it("should convert 11 to XI", function() {
-    //         expect(numeralator.convertInteger(11)).toEqual("XI");
-    //     })
-    //     it("should convert 21 to XXII", function() {
-    //         expect(numeralator.convertInteger(21)).toEqual("XXI");
-    //     })
-    //     it("should convert 31 to XXXI", function() {
-    //         expect(numeralator.convertInteger(31)).toEqual("XXXI");
-    //     })
-    //     it("should convert 41 to XXXXI", function() {
-    //         expect(numeralator.convertInteger(41)).toEqual("XXXXI");
-    //     })
-    // })
-
-    // describe("A function to convert multiples of 5", function() {
-    //     it("should convert 15 to XV", function() {
-    //         expect(numeralator.convertInteger(15)).toEqual("XV");
-    //     })
-    // })
-
 })

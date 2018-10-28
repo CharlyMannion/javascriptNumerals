@@ -16,34 +16,16 @@ function Numeralator() {
     })[integer];
 
     this.rules = [ 
-        // {
-        //     matchRoman: function(integer) { if (integer % 10 === 5) return true},
-        //     getValue: function(integer) { return (integer === 15) ? "XV" :  "V" }
-        // },
         {
             matchRoman: function(integer) { if ( integer > 10 && integer <= 20 ) return true }, 
             getValue: function(integer) { return "X" + getNumeral(integer-10) }
         },
-
         {
             matchRoman: function(integer) { if (basicNum.includes(integer)) return true }, 
             getValue: function(integer) { 
                 return getNumeral(integer) 
             }
         },
-
-        // {
-        //     matchRoman: function(integer) { if (integer % 10 === 1) return true},
-        //     getValue: function(integer) {
-        //         const getNumeral = (integer) => ({
-        //             11: "XI",
-        //             21: "XXI",
-        //             31: "XXXI",
-        //             41: "XXXXI"
-        //         })[integer];
-        //         return getNumeral(integer)   
-        //     } 
-        // },
     ]
 }
 
