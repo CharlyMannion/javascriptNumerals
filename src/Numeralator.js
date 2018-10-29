@@ -3,6 +3,7 @@ function Numeralator() {
     var basicNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
     const getNumeral = (integer) => ({
+        0: "",
         1: "I",
         2: "II",
         3: "III",
@@ -17,7 +18,7 @@ function Numeralator() {
 
     this.rules = [ 
         {
-            matchRoman: function(integer) { if ( integer > 40 && integer <= 50 ) return true }, 
+            matchRoman: function(integer) { if ( integer >= 40 && integer < 50 ) return true }, 
             getValue: function(integer) { return "XL" + getNumeral(integer-40) }
         },
         {
