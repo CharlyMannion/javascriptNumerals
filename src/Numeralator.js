@@ -65,7 +65,7 @@ function Numeralator() {
         {
             matchRoman: function(integer) {
                 var num = 10;
-                if ( integer >= 10 && integer <= 19 ) return true, num 
+                if ( integer >= 10 && integer <= 19 ) return num = 10
             }, 
             getValue: function(integer, num) { 
                 console.log(num);
