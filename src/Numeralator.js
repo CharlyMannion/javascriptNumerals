@@ -13,7 +13,7 @@ function Numeralator() {
         7: "VII",
         8: "VIII",
         9: "IX",
-        // 10: "X"
+        10: "X"
     })[integer];
 
     this.rules = [ 
@@ -39,7 +39,7 @@ function Numeralator() {
         },
         {
             matchRoman: function(integer) { if ( integer >= 10 && integer <= 19 ) return true }, 
-            getValue: function(integer) { return "X" + getNumeral(integer-10) }
+            getValue: function(integer) { return getNumeral(10) + getNumeral(integer-10) }
         },
         {
             matchRoman: function(integer) { if (basicNum.includes(integer)) return true }, 
