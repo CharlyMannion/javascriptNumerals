@@ -62,6 +62,9 @@ describe("Numeralator", function() {
         it("should convert 39 to XXXIX", function() {
             expect(numeralator.convertInteger(39)).toEqual("XXXIX");
         })
+        it("should convert 30 to XXX", function() {
+            expect(numeralator.convertInteger(39)).toEqual("XXXIX");
+        })
     })
 
     describe("A function to convert integers 40-49 to numerals", function() {
@@ -73,10 +76,13 @@ describe("Numeralator", function() {
         })
     })
 
-    // describe("A function to convert integers 50-69 to numerals", function() {
-    //     it("should convert 60 to LX", function() {
-    //         expect(numeralator.convertInteger(60)).toEqual("LX");
-    //     })
-    // })
+    describe("A function to convert integers 50-59 to numerals", function() {
+        it("should convert 50 to L", function() {
+            expect(numeralator.convertInteger(50)).toEqual("L");
+        })
+        it("should convert 58 to L", function() {
+            expect(numeralator.convertInteger(58)).toEqual("LVIII");
+        })
+    })
 
 })
