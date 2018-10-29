@@ -65,8 +65,8 @@ describe("Numeralator", function() {
     })
 
     describe("A function to convert integers 41-50 to numerals", function() {
-        it("should convert 45 to XXXXV", function() {
-            expect(numeralator.convertInteger(45)).toEqual("XXXXV");
+        it("should convert 45 to XLV", function() {
+            expect(numeralator.convertInteger(45)).toEqual("XLV");
         })
     })
 
