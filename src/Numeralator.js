@@ -13,32 +13,32 @@ function Numeralator() {
         7: "VII",
         8: "VIII",
         9: "IX",
-        10: "X"
+        // 10: "X"
     })[integer];
 
     this.rules = [ 
         {
-            matchRoman: function(integer) { if ( integer >= 60 && integer < 70 ) return true }, 
+            matchRoman: function(integer) { if ( integer >= 60 && integer <= 69 ) return true }, 
             getValue: function(integer) { return "LX" + getNumeral(integer-60) }
         },
         {
-            matchRoman: function(integer) { if ( integer >= 50 && integer < 60 ) return true }, 
+            matchRoman: function(integer) { if ( integer >= 50 && integer <= 59 ) return true }, 
             getValue: function(integer) { return "L" + getNumeral(integer-50) }
         },
         {
-            matchRoman: function(integer) { if ( integer >= 40 && integer < 50 ) return true }, 
+            matchRoman: function(integer) { if ( integer >= 40 && integer <= 49 ) return true }, 
             getValue: function(integer) { return "XL" + getNumeral(integer-40) }
         },
         {
-            matchRoman: function(integer) { if ( integer >= 30 && integer < 40 ) return true }, 
+            matchRoman: function(integer) { if ( integer >= 30 && integer <= 39 ) return true }, 
             getValue: function(integer) { return "XXX" + getNumeral(integer-30) }
         },
         {
-            matchRoman: function(integer) { if ( integer > 20 && integer <= 30 ) return true }, 
+            matchRoman: function(integer) { if ( integer >= 20 && integer <= 29 ) return true }, 
             getValue: function(integer) { return "XX" + getNumeral(integer-20) }
         },
         {
-            matchRoman: function(integer) { if ( integer > 10 && integer <= 20 ) return true }, 
+            matchRoman: function(integer) { if ( integer >= 10 && integer <= 19 ) return true }, 
             getValue: function(integer) { return "X" + getNumeral(integer-10) }
         },
         {
