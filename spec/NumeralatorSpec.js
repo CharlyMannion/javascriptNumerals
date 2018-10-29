@@ -85,4 +85,13 @@ describe("Numeralator", function() {
         })
     })
 
+    describe("A function to convert integers 60-69 to numerals", function() {
+        it("should convert 60 to LX", function() {
+            expect(numeralator.convertInteger(60)).toEqual("LX");
+        })
+        it("should convert 66 to LXVI", function() {
+            expect(numeralator.convertInteger(66)).toEqual("LXVI");
+        })
+    })
+
 })

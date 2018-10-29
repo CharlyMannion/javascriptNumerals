@@ -18,6 +18,10 @@ function Numeralator() {
 
     this.rules = [ 
         {
+            matchRoman: function(integer) { if ( integer >= 60 && integer < 70 ) return true }, 
+            getValue: function(integer) { return "LX" + getNumeral(integer-60) }
+        },
+        {
             matchRoman: function(integer) { if ( integer >= 50 && integer < 60 ) return true }, 
             getValue: function(integer) { return "L" + getNumeral(integer-50) }
         },
