@@ -18,10 +18,30 @@ function Numeralator() {
         30: "XXX",
         40: "XL",
         50: "L",
-        60: "LX"
+        60: "LX",
+        70: "LXX",
+        80: "LXXX",
+        90: "XC",
+        100: "C"
     })[integer];
 
     this.rules = [ 
+        {
+            matchRoman: function(integer) { if ( integer >= 100 && integer <= 109 ) return true }, 
+            getValue: function(integer) { return getNumeral(100) + getNumeral(integer-100) }
+        },
+        {
+            matchRoman: function(integer) { if ( integer >= 90 && integer <= 99 ) return true }, 
+            getValue: function(integer) { return getNumeral(90) + getNumeral(integer-90) }
+        },
+        {
+            matchRoman: function(integer) { if ( integer >= 80 && integer <= 89 ) return true }, 
+            getValue: function(integer) { return getNumeral(80) + getNumeral(integer-80) }
+        },
+        {
+            matchRoman: function(integer) { if ( integer >= 70 && integer <= 79 ) return true }, 
+            getValue: function(integer) { return getNumeral(70) + getNumeral(integer-70) }
+        },
         {
             matchRoman: function(integer) { if ( integer >= 60 && integer <= 69 ) return true }, 
             getValue: function(integer) { return getNumeral(60) + getNumeral(integer-60) }

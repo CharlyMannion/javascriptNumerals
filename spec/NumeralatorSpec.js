@@ -94,4 +94,40 @@ describe("Numeralator", function() {
         })
     })
 
+    describe("A function to convert integers 70-79 to numerals", function() {
+        it("should convert 70 to LXX", function() {
+            expect(numeralator.convertInteger(70)).toEqual("LXX");
+        })
+        it("should convert 75 to LXXV", function() {
+            expect(numeralator.convertInteger(75)).toEqual("LXXV");
+        })
+    })
+
+    describe("A function to convert integers 80-89 to numerals", function() {
+        it("should convert 80 to LXXX", function() {
+            expect(numeralator.convertInteger(80)).toEqual("LXXX");
+        })
+        it("should convert 81 to LXXV", function() {
+            expect(numeralator.convertInteger(81)).toEqual("LXXXI");
+        })
+    })
+
+    describe("A function to convert integers 90-99 to numerals", function() {
+        it("should convert 90 to XC", function() {
+            expect(numeralator.convertInteger(90)).toEqual("XC");
+        })
+        it("should convert 99 to XCIX", function() {
+            expect(numeralator.convertInteger(99)).toEqual("XCIX");
+        })
+    })
+
+    describe("A function to convert integers 100-109 to numerals", function() {
+        it("should convert 100 to C", function() {
+            expect(numeralator.convertInteger(100)).toEqual("C");
+        })
+        it("should convert 103 to XCIX", function() {
+            expect(numeralator.convertInteger(103)).toEqual("CIII");
+        })
+    })
+
 })
