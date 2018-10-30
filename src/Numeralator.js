@@ -2,8 +2,6 @@ function Numeralator() {
 
     var basicNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-    var num1 = ""
-
     const getNumeral = (integer) => ({
         0: "",
         1: "I",
@@ -67,9 +65,7 @@ function Numeralator() {
         {
             matchRoman: function(integer) {
                 if ( integer >= 10 && integer <= 19 ) { 
-                    console.log(num1);
                     num1 = 11;
-                    console.log(num1);
                     return num1
                 }
             }, 
