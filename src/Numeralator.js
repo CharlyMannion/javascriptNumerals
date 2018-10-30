@@ -2,6 +2,8 @@ function Numeralator() {
 
     var basicNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
+    var num1 = 0
+
     const getNumeral = (integer) => ({
         0: "",
         1: "I",
@@ -59,18 +61,22 @@ function Numeralator() {
             getValue: function(integer) { return getNumeral(30) + getNumeral(integer-30) }
         },
         {
-            matchRoman: function(integer) { if ( integer >= 20 && integer <= 29 ) return true }, 
-            getValue: function(integer) { return getNumeral(20) + getNumeral(integer-20) }
+            matchRoman: function(integer) { if ( integer >= 20 && integer <= 29 ) 
+                // num1 = 20
+                return true }, 
+            getValue: function(integer) { 
+                // console.log("integer at 20", num1)
+                return getNumeral(20) + getNumeral(integer-20) }
         },
         {
             matchRoman: function(integer) { 
                 if ( integer >= 10 && integer <= 19 )
+                num1 = 10
                 return true 
             }, 
             getValue: function(integer) { 
-                var num = 10;
-                console.log(num);
-                return getNumeral(num) + getNumeral(integer-num) 
+                console.log("integer at 10", num1)
+                return getNumeral(num1) + getNumeral(integer-num1) 
             }
         },
         {
