@@ -63,14 +63,11 @@ function Numeralator() {
             getValue: function(integer) { return getNumeral(20) + getNumeral(integer-20) }
         },
         {
-            matchRoman: function(integer) {
-                if ( integer >= 10 && integer <= 19 ) { 
-                    num1 = 11;
-                    return num1
-                }
+            matchRoman: function(integer) { 
+                if ( integer >= 10 && integer <= 19 )
+                return true 
             }, 
-            getValue: function(integer, num1) { 
-                console.log(num1);
+            getValue: function(integer) { 
                 var num = 10;
                 console.log(num);
                 return getNumeral(num) + getNumeral(integer-num) 
