@@ -2,7 +2,7 @@ function Numeralator() {
 
     var basicNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-    var num1 = 0
+    // var num1 = 0
 
     const getNumeral = (integer) => ({
         0: "",
@@ -71,10 +71,11 @@ function Numeralator() {
         {
             matchRoman: function(integer) { 
                 if ( integer >= 10 && integer <= 19 )
-                num1 = 10
-                return true 
+                var num1 = 10;
+                console.log(num1);
+                return num1 
             }, 
-            getValue: function(integer) { 
+            getValue: function(integer, num1) { 
                 console.log("integer at 10", num1)
                 return getNumeral(num1) + getNumeral(integer-num1) 
             }
