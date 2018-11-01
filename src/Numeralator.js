@@ -71,13 +71,14 @@ function Numeralator() {
         {
             matchRoman: function(integer) { 
                 if ( integer >= 10 && integer <= 19 )
-                var num1 = 10;
-                console.log(num1);
-                return num1 
+                // var num1 = 10;
+                // console.log(num1);
+                // return num1 
+                return true 
             }, 
-            getValue: function(integer, num1) { 
-                console.log("integer at 10", num1)
-                return getNumeral(num1) + getNumeral(integer-num1) 
+            getValue: function(integer) { 
+                // console.log("integer at 10", num1)
+                return getNumeral(10) + getNumeral(integer-10) 
             }
         },
         {
